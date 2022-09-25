@@ -6,7 +6,7 @@ function createHome() {
   const text = document.createElement('p');
   home.classList.add('home');
   title.textContent = 'BRUNCH SHACK';
-  text.textContent = 'A perfect brunch bar with a cozy atmosphere.';
+  text.textContent = 'A perfect brunch bar with a cozy atmosphere';
   home.appendChild(title);
   home.appendChild(text);
   main.appendChild(home);

@@ -4,7 +4,7 @@
   "description": "restaurant-page",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -12,11 +12,15 @@
   },
   "author": "ipeng5",
   "license": "MIT",
+  "homepage":"https://ipeng5.github.io/restaurant-page" 
   "bugs": {
     "url": "https://github.com/ipeng5/restaurant-page/issues"
   },
   "homepage": "https://github.com/ipeng5/restaurant-page#readme",
   "devDependencies": {
     "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
