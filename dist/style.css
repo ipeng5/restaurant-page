@@ -63,6 +63,7 @@ main {
   flex-direction: column;
   justify-content: center;
   padding: 80px;
+  margin-bottom: 10rem;
 }
 
 .home,
@@ -106,7 +107,6 @@ h1 {
   main {
     background-color: var(--background-light);
     padding: 10px 50px;
-    margin-bottom: 10rem;
   }
 
   .home,
