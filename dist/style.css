@@ -17,7 +17,7 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-image: url('../src/assets/image.jpg');
+  background-image: url('assets/image.jpg');
   font-size: 1.5rem;
   color: var(--font-color);
   background-size: cover;
