@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(){const e=document.getElementById("content"),t=document.createElement("h1"),n=document.createElement("p");t.textContent="THE BRUNCH HEAVEN",n.textContent=" The perfect brunch restaurant with a cozy atmosphere.",e.appendChild(t),e.appendChild(n)}()})();
