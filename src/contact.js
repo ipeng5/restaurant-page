@@ -2,7 +2,7 @@ function createContact() {
   const content = document.querySelector('#content');
   const main = document.createElement('main');
   const contact = document.createElement('div');
-  contact.classList.add('contact', 'fade-in');
+  contact.classList.add('contact');
 
   main.insertAdjacentHTML(
     'afterbegin',

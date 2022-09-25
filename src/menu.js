@@ -27,7 +27,7 @@ function createMenu() {
   const content = document.querySelector('#content');
   const main = document.createElement('main');
   const menu = document.createElement('menu');
-  menu.classList.add('menu', 'fade-in');
+  menu.classList.add('menu');
 
   menuArray.forEach(function (item, i) {
     const itemContainer = document.createElement('div');
