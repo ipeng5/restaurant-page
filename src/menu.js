@@ -1,20 +1,27 @@
-const menuArr = [
-  {
-    name: 'Carrot Cake',
-    description: 'A classic crowd pleaser, with homemade cream cheese frosting',
-    price: '8,00€',
-  },
-  {
-    name: 'Egg Crepes',
-    description: 'Baked egg crepes with spring herbs and avocado',
-    price: '10,00€',
-  },
-  {
-    name: 'Sandwich',
-    description: 'Loaded with herb sausage patties, eggs, tomato',
-    price: '11,00€',
-  },
-];
+const menuArray = [];
+class MenuCl {
+  constructor(title, intro, price) {
+    this.title = title;
+    this.intro = intro;
+    this.price = price;
+    menuArray.push(this);
+  }
+}
+const item1 = new MenuCl(
+  'Carrot Cake',
+  'A classic crowd pleaser, with homemade cream cheese frosting',
+  '8,00€'
+);
+const item2 = new MenuCl(
+  'Egg Crepes',
+  'Baked egg crepes with spring herbs and avocado',
+  '10,00€'
+);
+const item3 = new MenuCl(
+  'Sandwich',
+  'Loaded with herb sausage patties, eggs, tomato',
+  '11,00€'
+);
 
 function createMenu() {
   const content = document.querySelector('#content');
@@ -22,14 +29,14 @@ function createMenu() {
   const menu = document.createElement('menu');
   menu.classList.add('menu', 'fade-in');
 
-  menuArr.forEach(function (item, i) {
+  menuArray.forEach(function (item, i) {
     const itemContainer = document.createElement('div');
     const itemTitle = document.createElement('h2');
     const itemIntro = document.createElement('p');
     const itemPrice = document.createElement('p');
-    itemTitle.textContent = menuArr[i].name;
-    itemIntro.textContent = menuArr[i].description;
-    itemPrice.textContent = menuArr[i].price;
+    itemTitle.textContent = menuArray[i].title;
+    itemIntro.textContent = menuArray[i].intro;
+    itemPrice.textContent = menuArray[i].price;
     itemContainer.appendChild(itemTitle);
     itemContainer.appendChild(itemIntro);
     itemContainer.appendChild(itemPrice);
