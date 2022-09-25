@@ -1,11 +1,16 @@
 function createHome() {
-  const content = document.getElementById('content');
+  const content = document.querySelector('#content');
+  const main = document.createElement('main');
+  const home = document.createElement('div');
   const title = document.createElement('h1');
   const text = document.createElement('p');
-  title.textContent = 'THE BRUNCH HEAVEN';
-  text.textContent = ' The perfect brunch restaurant with a cozy atmosphere.';
-  content.appendChild(title);
-  content.appendChild(text);
+  home.classList.add('home');
+  title.textContent = 'BRUNCH SHACK';
+  text.textContent = 'A perfect brunch bar with a cozy atmosphere.';
+  home.appendChild(title);
+  home.appendChild(text);
+  main.appendChild(home);
+  content.appendChild(main);
 }
 
 export default createHome;
